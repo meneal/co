@@ -16,7 +16,7 @@
     "mz": "^1.0.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --recursive -R xunit test/ > test-reports.xml",
+    "test": "./node_modules/.bin/mocha",
     "test-cov": "node node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter dot",
     "test-travis": "node --harmony node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --report lcovonly -- --reporter dot",
     "prepublish": "npm run browserify",
